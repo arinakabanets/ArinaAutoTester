@@ -1,3 +1,9 @@
+const chai = require('chai');
+expect = chai.expect;
+const {multiply} = require('./mathFunctions');
+//const multiply = require('./multiply').multiply;
+
+
 /**
  * Multiplies two values and prints result
  * @param {number} x 
