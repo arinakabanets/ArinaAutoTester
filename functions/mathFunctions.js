@@ -4,6 +4,8 @@ const mathFunctions = {
     plus: (x,y) => plus(x, y)
 }
 
+module.exports = mathFunctions;
+
 /**
  * Divides two values
  * @param {number} x 
@@ -14,8 +16,6 @@ function divide(x, y) {
     return x / y;
 }
 
-module.exports = mathFunctions;
-
 /**
  * Multiplies two values and prints result
  * @param {number} x 
@@ -23,12 +23,12 @@ module.exports = mathFunctions;
  * @returns x * y
  */
  function multiply(x, y) {
+     // Check if input is a number
+     // If input number is not undefined
     let result = x * y;
     console.log(`Multiplying ${x} by ${y} = ${result}`);
     return result;
 }
-
-module.exports = mathFunctions; 
 
 /**
  * Pluses two values and prints result
@@ -41,4 +41,3 @@ module.exports = mathFunctions;
     console.log(`Plus ${x} and ${y} = ${result}`);
     return result;
 }
-module.exports = mathFunctions;

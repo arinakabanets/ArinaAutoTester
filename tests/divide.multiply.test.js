@@ -1,8 +1,6 @@
 const chai = require('chai');
 expect = chai.expect;
-const mathFunctions = require('../mathFunctions');
-//const divide = require('./divide').divide;
-//const multiply = require('./multiply').multiply;
+const mathFunctions = require('../functions/mathFunctions');
 
 describe('multiply/divide suite', function () {
     
@@ -23,39 +21,21 @@ describe('multiply/divide suite', function () {
     });
 
     it('multiply test', async function () {
-        // throw new Error('Add f here');
         // declare varibles
-        const d = 9;
-        const e = 1;
+        const a = 9;
+        const b = 2;
+        // 0
+        // char instead of number
+        // floating numbers like 0.35 0,35
+        // set only one parameter to function like mathFunctions.multiply(a);
 
         // declare expected result
-        const expectedResult = d * e;
-        //const expectedResult = 9;
+        const expectedResult = a * b;
 
         // call divide function
-        const actualResult = mathFunctions.multiply(d, e);
+        const actualResult = mathFunctions.multiply(a, b);
 
         // compare expected result with the result of the divide function
         expect(expectedResult).to.be.equals(actualResult, `Expected: '${expectedResult}' is not equal to actual '${actualResult}'`);
     });
-
-
-
-
-        // call the mathFunctions multiply and divide
-        //mathFunctions.multiply(2, 4);
-        //mathFunctions.divide(2, 4);
-
-
-        // move multiply function into mathFunctions.js
-        // write test for mutiply
-        // launch test
-        // write documentation in README.md on how to launch test
-        // in terminal:
-        // cd ~/Documents/Projects/ArinaAutoTester
-        // mocha divide.test.js
-
-        // write separate file test with plus function
-        
-    
 });
